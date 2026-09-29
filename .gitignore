@@ -1,0 +1,37 @@
+# Entornos virtuales
+entorno/
+entorno_virtual/
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# Variables de entorno y credenciales
+.env
+*.env
+conexion.json
+
+# Logs
+*.log
+datos/*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Datos temporales
+datos/*.csv
+*.zip
+*.pdf
