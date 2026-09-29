@@ -419,13 +419,13 @@ class VentanaGraficos(ctk.CTkFrame):
             for label in eje.get_xticklabels():
                 label.set_ha("right")
 
-        # Título general.
+        # Título general (con más espacio arriba para que no lo tapen los subtítulos).
         self.figura.suptitle(
             "Distribución de Frecuencias por Rango",
-            fontsize=14, fontweight="bold", y=1.02,
+            fontsize=14, fontweight="bold", y=1.08,
         )
-        self.figura.tight_layout()
-
+        self.figura.tight_layout(rect=[0, 0, 1, 0.96])
+        
     # -----------------------------------------------------------------
     # Acciones de filtros
     # -----------------------------------------------------------------
